@@ -1,0 +1,133 @@
+/*:root {
+    --spacer: 25px;
+    --color1: rgb(6, 114, 80);
+    --color2: aliceblue;
+  }*/
+body {
+  /*altrimenti lo sfondo del prodotto in evidenza non toccava 
+  il margine sinistro e destro, ma rimaneva dello spazio bianco*/
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+.navbar {
+  margin: 25px;
+  position: relative;
+}
+.navbar h1 {
+  display: inline;
+  margin-right: 25px;
+}
+.navbar #HomePage {
+  color: #219973;
+}
+.navbar .icons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.navbar .icons span {
+  margin-left: 15px;
+}
+.navbar #menu_icon {
+  display: none;
+}
+
+.evidenza {
+  background-color: rgb(156, 234, 209);
+  display: flex;
+}
+.evidenza div {
+  margin: 25px;
+}
+.evidenza .corpo {
+  font-size: 30px;
+  padding-left: 25px;
+}
+.evidenza img {
+  height: 500px;
+}
+
+button {
+  padding: 15px 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #219973;
+  font-size: 20px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: #219973;
+}
+
+.ChiSiamo {
+  margin: 25px;
+}
+.ChiSiamo h1 {
+  color: #219973;
+  text-align: center;
+}
+.ChiSiamo p {
+  column-count: 2;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar #menu_aperto {
+    display: none;
+  }
+  .navbar #menu_icon {
+    display: inline;
+  }
+  .evidenza {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .evidenza div {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .evidenza img {
+    height: 250px;
+  }
+  .evidenza .corpo {
+    font-size: 18px;
+  }
+  .ChiSiamo p {
+    column-count: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar h1 {
+    font-size: 25px;
+  }
+  .evidenza .corpo {
+    font-size: 20px;
+    padding-left: 25px;
+  }
+  .evidenza img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .navbar h1 {
+    font-size: 30px;
+  }
+  .evidenza .corpo {
+    font-size: 25px;
+    padding-left: 25px;
+  }
+  .evidenza img {
+    height: 350px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
