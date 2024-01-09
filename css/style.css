@@ -66,15 +66,35 @@ button:hover {
 
 .ChiSiamo {
   margin: 25px;
+  position: relative;
 }
 .ChiSiamo h1 {
   color: #219973;
   text-align: center;
 }
-.ChiSiamo p {
+.ChiSiamo img {
+  height: 20vw;
+  padding-right: 5%;
+  float: left;
+}
+.ChiSiamo .ImgTesto {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+.ChiSiamo #DueColonne {
   column-count: 2;
   padding-left: 10%;
   padding-right: 10%;
+  text-align: justify;
+  display: none;
+}
+.ChiSiamo #ButtonMore {
+  color: #219973;
+  text-decoration: underline;
+  text-align: right;
+  margin-right: 10%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {

@@ -50,7 +50,7 @@ body {
 
 .evidenza{
     background-color: $background-color;
-    display: flex;   
+    display: flex;  
     
     div {
             margin: $spacer;
@@ -84,18 +84,41 @@ button:hover{
 }
 
 
-.ChiSiamo{
-    margin:$spacer;
+.ChiSiamo {
+    margin: $spacer;
+    position: relative;
 
     h1 {
-            color: $base-color;
-            text-align: center;
-        }
+        color: $base-color;
+        text-align: center;
+    }
 
-    p {
+    img {
+        height: 20vw;
+        padding-right: 5%;
+        float: left;
+    }
+
+    .ImgTesto {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+    }
+
+    #DueColonne {
         column-count: 2;
         padding-left: 10%;
         padding-right: 10%;
+        text-align: justify;
+        display: none;
+    }
+
+    #ButtonMore {
+        color: $base-color;
+        text-decoration: underline;
+        text-align: right;
+        margin-right: 10%;
+        cursor: pointer;
     }
 }
 
